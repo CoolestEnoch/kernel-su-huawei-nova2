@@ -11,5 +11,3 @@
 
 [AnyKernel3](https://github.com/osm0sis/AnyKernel3)
 
-
-
