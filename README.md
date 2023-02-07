@@ -9,3 +9,7 @@
 ## 鸣谢 / Thanks 
 [KernelSU Project](https://github.com/tiann/KernelSU)
 
+[AnyKernel3](https://github.com/osm0sis/AnyKernel3)
+
+
+
