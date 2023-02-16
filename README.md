@@ -1,3 +1,5 @@
+# *Kernel SU for Huawei nova 2*
+
 [![ksuManagerScreenshot](/res/ksuManagerScreenShot.jpg)](https://github.com/CoolestEnoch/kernel-su-huawei-nova2)
 
 ## 编译过程视频（算得上教程吧...?） / Video Tutorial
