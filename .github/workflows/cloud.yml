@@ -1,0 +1,56 @@
+name: (Cloud)Kernel Builder Xiaomi 10 Ultra
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout zipper
+      uses: actions/checkout@v2
+      with:
+        repository: lemniskett/AnyKernel3
+        path: zipper
+    - name: Integrate KernelSU
+      run: |
+
+
+        sudo apt install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev libgl1-mesa-dev libxml2-utils xsltproc unzip bc
+
+        mv kernel source
+        cd source
+
+        sudo cp ./libdebuginfod.so.1 /usr/lib
+        sudo chmod 777 /usr/lib/libdebuginfod.so.1
+
+        echo "[+] Append kernel params to kprobes"
+        # echo "CONFIG_KPROBES=y" >> arch/arm64/configs/vendor/bengal-perf_defconfig
+        # echo "CONFIG_HAVE_KPROBES=y" >> arch/arm64/configs/vendor/bengal-perf_defconfig
+        # echo "CONFIG_KPROBE_EVENTS=y" >> arch/arm64/configs/vendor/bengal-perf_defconfig
+
+        git clone https://github.com/tiann/KernelSU
+        cd KernelSU
+        git stash && git pull
+        cd ../
+        cp -r KernelSU/kernel drivers/kernelsu
+
+        echo "[+] Add kernel su driver to Makefile"
+
+        # echo "obj-y += kernelsu/" >> drivers/Makefile
+
+        echo "[+] Done."
+    - name: Android kernel build
+      uses: lemniskett/android-kernel-actions@master
+      id: build
+      env:
+        KERNEL_PATH: source
+      with:
+        arch: arm64
+        compiler: proton-clang/master/binutils
+        defconfig: cas_defconfig
+        image: Image
+    - name: Upload Build
+      uses: actions/upload-artifact@v3
+      with:
+        name: Image
+        path: /home/runner/work/kernel-su-huawei-nova2/kernel-su-huawei-nova2/zipper
