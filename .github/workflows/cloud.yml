@@ -24,7 +24,7 @@ jobs:
         mv thisRepo/* .
         rm -rf thisRepo
 
-        sudo cp ./libdebuginfod.so.1 /usr/lib
+        sudo cp ./res/libdebuginfod.so.1 /usr/lib
         sudo chmod 777 /usr/lib/libdebuginfod.so.1
         
         mv kernel source
