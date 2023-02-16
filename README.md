@@ -1,5 +1,6 @@
 # *Kernel SU for Huawei nova 2*
 [![Kernel Builder Huawei nova 2 (Hi6250) (Cloud)](https://github.com/CoolestEnoch/kernel-su-huawei-nova2/actions/workflows/cloud.yml/badge.svg)](https://github.com/CoolestEnoch/kernel-su-huawei-nova2/actions/workflows/cloud.yml)
+[![Kernel Builder Huawei nova 2 (Hi6250) (GCC)](https://github.com/CoolestEnoch/kernel-su-huawei-nova2/actions/workflows/legacy.yml/badge.svg)](https://github.com/CoolestEnoch/kernel-su-huawei-nova2/actions/workflows/legacy.yml)
 
 [![ksuManagerScreenshot](/res/ksuManagerScreenShot.jpg)](https://github.com/CoolestEnoch/kernel-su-huawei-nova2)
 
