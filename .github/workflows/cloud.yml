@@ -16,7 +16,7 @@ jobs:
 
 
         sudo apt install tree
-        tree .
+        tree ../
     - name: Android kernel build
       uses: lemniskett/android-kernel-actions@master
       id: build
