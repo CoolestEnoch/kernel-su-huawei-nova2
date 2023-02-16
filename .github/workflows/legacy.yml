@@ -59,7 +59,7 @@ jobs:
         export CROSS_COMPILE_ARM32=$(pwd)/gcc/gcc-arm-gcc-master/bin/arm-eabi-
         
         cd source
-        #make merge_hi6250_defconfig
+        make merge_hi6250_defconfig
         make -j2
         
 
