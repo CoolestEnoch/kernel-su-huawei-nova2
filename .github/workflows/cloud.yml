@@ -55,7 +55,7 @@ jobs:
         arch: arm64
         compiler: proton-clang/master/binutils
         defconfig: merge_hi6250_defconfig
-        image: Image
+        image: Image.gz
     - name: Upload Build
       uses: actions/upload-artifact@v3
       with:
