@@ -54,7 +54,7 @@ jobs:
       with:
         arch: arm64
         compiler: proton-clang/master/binutils
-        defconfig: cas_defconfig
+        defconfig: merge_hi6250_defconfig
         image: Image
     - name: Upload Build
       uses: actions/upload-artifact@v3
