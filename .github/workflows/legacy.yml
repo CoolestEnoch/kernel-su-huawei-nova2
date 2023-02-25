@@ -77,6 +77,6 @@ jobs:
     - name: Upload Build
       uses: actions/upload-artifact@v3
       with:
-        name: Image
+        name: unzip-me-then-flash-this.zip
         path: /home/runner/work/kernel-su-huawei-nova2/kernel-su-huawei-nova2/source/arch/arm64/boot/anykernel/nova2ksu.zip
 
