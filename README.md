@@ -20,7 +20,7 @@ This kernel will be built at every Monday 0:00(UTC+0) by Github Actions below:
 [KernelSU Project](https://github.com/tiann/KernelSU)
 
 
-[LineageOS Kernel Open Source by @hi6250-oss-old](https://github.com/hisi-oss/android_kernel_huawei_hi6250-8)
+[LineageOS Kernel Open Source by @hisi-oss](https://github.com/hisi-oss/android_kernel_huawei_hi6250-8)
 <!--[LineageOS Kernel Open Source by @hi6250-oss-old](https://github.com/hi6250-oss-old/android_kernel_huawei_hi6250-8)-->
 
 
