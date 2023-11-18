@@ -16,9 +16,12 @@ This kernel will be built at every Monday 0:00(UTC+0) by Github Actions below:
 ## 咋编译？ / How to compile?
 > 参考这个 / Refer to this: [KernelSU for Mi 10 Ultra](https://github.com/CoolestEnoch/kernel-su-xiaomi-cas)
 
-## 鸣谢 / Thanks
-[LineageOS Kernel Open Source by @hi6250-oss-old](https://github.com/hi6250-oss-old/android_kernel_huawei_hi6250-8)
- 
+## 鸣谢 / Thanks 
 [KernelSU Project](https://github.com/tiann/KernelSU)
+
+
+[LineageOS Kernel Open Source by @hi6250-oss-old](https://github.com/hisi-oss/android_kernel_huawei_hi6250-8)
+<!--[LineageOS Kernel Open Source by @hi6250-oss-old](https://github.com/hi6250-oss-old/android_kernel_huawei_hi6250-8)-->
+
 
 [AnyKernel3](https://github.com/osm0sis/AnyKernel3)
